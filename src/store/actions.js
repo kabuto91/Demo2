@@ -1,5 +1,5 @@
 import {CHANGE_INPUT, DELETE_ITEM, ADD_ITEM, GET_LIST, GET_MY_LIST} from './actionTypes';
-import axios from 'axios';
+// import axios from 'axios';
 
 export const changeInputValueAction = (value) =>({
     type:CHANGE_INPUT,
@@ -21,13 +21,13 @@ export const getListAction = (data) =>({
 })
 
 export const getTodoList = () =>{
-    return (dispatch) =>{
-        axios.get('http://rap2api.taobao.org/app/mock/282255/ReactDemo').then((res) =>{
-            const data = res.data;
-            const action = getListAction(data);
-            dispatch(action);
-        })
-    }
+    // return (dispatch) =>{
+    //     axios.get('http://rap2api.taobao.org/app/mock/282255/ReactDemo').then((res) =>{
+    //         const data = res.data;
+    //         const action = getListAction(data);
+    //         dispatch(action);
+    //     })
+    // }
 }
 
 export const getMyListAction = () =>({
