@@ -13,7 +13,7 @@ function Example7(){
     )
 }
 
-function ChildComponent({name, children}){
+function ChildComponent({name, children}){      //children为组件的子组件
 
     function changeXiaohong(){
         console.log('他来啦，他来啦，小红向我们走来啦');
